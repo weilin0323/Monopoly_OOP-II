@@ -3,6 +3,7 @@
 
 ### 初始畫面說明
 首先會跳出「開始遊戲介面」，介面示意圖如下：<br/>
+
 <img width="159" alt="截圖 2023-10-16 下午10 58 23" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/015cfc3f-fde3-43ec-851e-0dca64478682">
 
 根據使用者不同的操作，會觸發以下不同事件：
@@ -10,16 +11,17 @@
 * 當使用者點擊"Start"之後，程式將跳轉至遊戲畫面， 此時遊戲畫面需生成4個玩家角色於起點，並且同時 生成 "Character.txt" 與 "Land.txt" 兩個檔案 作為遊戲數 據初始檔。遊戲開始畫面與初始數據如下所示：
 <center>
 <img width="494" alt="截圖 2023-10-16 下午10 29 53" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/70e8f6d5-a7ce-4e8d-97ce-23ee4de4249c">
-</center>
+<center/>
 
-Character.txt 初始生成數據及變數意義：<br/>
+* Character.txt 初始生成數據及變數意義：<br/>
+
 <img width="265" alt="截圖 2023-10-16 下午11 00 30" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/fb6a2c4d-0f03-43c6-8b7a-d01866581a77"><br/>
-第一行：當前回合數, 當前輪到的角色編號。
-1. location: 角色所處的地圖位置
-2. CHARACTER_NUMBER: 玩家編號
-3. money: 角色目前持有的金錢
-4. status: 角色目前的行動狀態
-5. IMAGE_FILENAME: 代表角色用的圖片名稱
+ 第一行：當前回合數, 當前輪到的角色編號。
+  1. location: 角色所處的地圖位置
+  2. CHARACTER_NUMBER: 玩家編號
+  3. money: 角色目前持有的金錢
+  4. status: 角色目前的行動狀態
+  5. IMAGE_FILENAME: 代表角色用的圖片名稱
 
 Land.txt 初始生成數據及變數意義：<br/>
 <img width="172" alt="截圖 2023-10-16 下午11 00 49" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/06d2d31f-06b0-4037-976b-6ac011e8ec23"><br/>
