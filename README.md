@@ -31,7 +31,7 @@ ii.若使用者點擊"Load"按鈕，則讀取已存在的遊戲記錄檔並跳�
 
 iii.若使用者點擊"Exit"按鈕，則程式直接結束執行。
 
-## 遊戲過程：
+### 遊戲過程：
 玩家擲完骰子並且角色移動到格子之後，將根據不同情況進行： 
 a、 若玩家到達的土地為無人擁有狀態，則跳出「是否購買」 視窗，視窗中敘述需包含該土地的價格，以及「是」、「否」 按鈕。視窗示意圖如下：<br/>
 <img width="283" alt="截圖 2023-10-16 下午10 56 10" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/07c592f8-b80e-4f9d-8da1-aef63cd34e6c">
@@ -49,44 +49,30 @@ d、 若玩家到達「機會」或「命運」，直接輪到下一位玩家擲
 e、 當玩家經過或踩到起點時，可以獲得2000元。
 
 
-## 遊戲規則：
+### 遊戲規則：
 1. 「地主」不會改變，玩家也不需要蓋房子。
 2. 玩家的金錢可以為負數。
 
-## 檔案描述：
+### 檔案描述：
 Character.java : 描述遊戲角色的基本架構，內含以下幾種變數
 
 1. location : 角色所處的地圖位置
-
 2. CHARACTER_NUMBER : 玩家編號
-
 3. money : 角色目前持有的金錢
-
 4. status : 角色目前的行動狀態
+5. IMAGE_FILENAME : 代表角色用的圖片名稱 (註:本次作業的附檔中含有建構式。)
 
-5. IMAGE_FILENAME : 代表角色用的圖片名稱 (註:本次作業的附檔中含有建構式。) Land.java：描述遊戲土地的基本架構，內含以下幾種變數
+Land.java：描述遊戲土地的基本架構，內含以下幾種變數
 
 1. PLACE_NUMBER：地圖編號，與 Character.location 互相對應
-
-2. owner：擁有地的地主的編號，若無地主則為 0，若有 則與地主之 CHARACTER_NUMBER 互相對應，。
-
+2. owner：擁有地的地主的編號，若無地主則為 0，若有則與地主之 CHARACTER_NUMBER 互相對應。
 3. LAND_PRICE：購買地的價錢。
-
 4. TOLLS：過路費。 Checkpoint5.java :
 
-本次作業主程式檔，同學將在此檔案完成本次的作業要求。
-GUI.java :
+Checkpoint6.java :主程式檔。
 
-本次作業圖形介面程式檔，同學將在此完成 GUI 介面與角
+GUI.java :圖形介面程式檔， GUI 介面與角色位置設置，並於 Checkpoint6.java 使用。
 
-色位置設置，並於 Checkpoint5.java 使用。
+Character.txt :遊戲數據，其中包含回合數、當前輪到的玩家以及 Character的每項數值。
 
-Character.txt :
-
-遊戲數據，其中包含回合數、當前輪到的玩家以及 Character
-
-的每項數值。
-
-Land.txt ：
-
-遊戲數據，其中包含：當前所有地的地主、無主情況。
+Land.txt ：遊戲數據，其中包含當前所有地的地主、無主情況。
