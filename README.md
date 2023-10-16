@@ -14,19 +14,20 @@ i. 當使用者點擊"Start"之後，程式將跳轉至遊戲畫面， 此時遊
 <center/>
 
 Character.txt 初始生成數據及變數意義：<br/>
+ 第一行：當前回合數, 當前輪到的角色編號。
+ 1. location: 角色所處的地圖位置
+ 2. CHARACTER_NUMBER: 玩家編號
+ 3. money: 角色目前持有的金錢
+ 4. status: 角色目前的行動狀態
+ 5. IMAGE_FILENAME: 代表角色用的圖片名稱
 
 <img width="265" alt="截圖 2023-10-16 下午11 00 30" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/fb6a2c4d-0f03-43c6-8b7a-d01866581a77"><br/>
- 第一行：當前回合數, 當前輪到的角色編號。
-  1. location: 角色所處的地圖位置
-  2. CHARACTER_NUMBER: 玩家編號
-  3. money: 角色目前持有的金錢
-  4. status: 角色目前的行動狀態
-  5. IMAGE_FILENAME: 代表角色用的圖片名稱
+
 
 Land.txt 初始生成數據及變數意義：<br/>
+對應到Land 的 LOCATION_NUMBER 與當前所有地的地主、無主情況。
 
 <img width="172" alt="截圖 2023-10-16 下午11 00 49" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/06d2d31f-06b0-4037-976b-6ac011e8ec23"><br/>
-對應到Land 的 LOCATION_NUMBER 與當前所有地的地主、無主情況。
 
 ii. 若使用者點擊"Load"按鈕，則會根據當前遊戲數據在畫面上顯示玩家的金錢、角色位置以及其他需顯示的遊戲資料。若在資料夾中沒有任何記錄檔，則會顯示「錯誤訊息介面」，示意圖如下：<br/>
 
@@ -35,7 +36,7 @@ ii. 若使用者點擊"Load"按鈕，則會根據當前遊戲數據在畫面上�
 iii. 若使用者點擊"Exit"按鈕，則程式直接結束執行。
 
 ### 遊戲過程：
-玩家擲完骰子並且角色移動到格子之後，將根據不同情況進行： 
+玩家擲完骰子並且角色移動到格子之後，將根據不同情況進行： <br/>
 i. 若玩家到達的土地為無人擁有狀態，則跳出「是否購買」視窗，示意圖如下：<br/>
 
 <img width="283" alt="截圖 2023-10-16 下午10 56 10" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/07c592f8-b80e-4f9d-8da1-aef63cd34e6c">
