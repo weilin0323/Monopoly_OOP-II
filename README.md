@@ -2,7 +2,7 @@
 
 簡易大富翁遊戲
 
-## 初始畫面說明
+### 初始畫面說明
 首先會跳出「開始遊戲介面」，介面示意圖如下：<br/>
 <img width="159" alt="截圖 2023-10-16 下午10 58 23" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/015cfc3f-fde3-43ec-851e-0dca64478682">
 
