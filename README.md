@@ -8,12 +8,12 @@
 
 根據使用者不同的操作，會觸發以下不同事件：
 
-* 當使用者點擊"Start"之後，程式將跳轉至遊戲畫面， 此時遊戲畫面需生成4個玩家角色於起點，並且同時 生成 "Character.txt" 與 "Land.txt" 兩個檔案 作為遊戲數 據初始檔。遊戲開始畫面與初始數據如下所示：
+i. 當使用者點擊"Start"之後，程式將跳轉至遊戲畫面， 此時遊戲畫面需生成4個玩家角色於起點，並且同時 生成 "Character.txt" 與 "Land.txt" 兩個檔案 作為遊戲數 據初始檔。遊戲開始畫面與初始數據如下所示：
 <center>
 <img width="494" alt="截圖 2023-10-16 下午10 29 53" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/70e8f6d5-a7ce-4e8d-97ce-23ee4de4249c">
 <center/>
 
-* Character.txt 初始生成數據及變數意義：<br/>
+Character.txt 初始生成數據及變數意義：<br/>
 
 <img width="265" alt="截圖 2023-10-16 下午11 00 30" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/fb6a2c4d-0f03-43c6-8b7a-d01866581a77"><br/>
  第一行：當前回合數, 當前輪到的角色編號。
@@ -24,13 +24,15 @@
   5. IMAGE_FILENAME: 代表角色用的圖片名稱
 
 Land.txt 初始生成數據及變數意義：<br/>
+
 <img width="172" alt="截圖 2023-10-16 下午11 00 49" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/06d2d31f-06b0-4037-976b-6ac011e8ec23"><br/>
 對應到Land 的 LOCATION_NUMBER 與當前所有地的地主、無主情況。
 
-* 若使用者點擊"Load"按鈕，則讀取已存在的遊戲記錄檔並跳轉至遊戲畫面，根據當前遊戲數據在畫面上顯示玩家的金錢、角色位置以及其他需顯示的遊戲資料。 若在資料夾中沒有任何記錄檔，則會顯示「錯誤訊息 介面」。「錯誤訊息介面」示意圖如下：<br/>
+ii. 若使用者點擊"Load"按鈕，則讀取已存在的遊戲記錄檔並跳轉至遊戲畫面，根據當前遊戲數據在畫面上顯示玩家的金錢、角色位置以及其他需顯示的遊戲資料。 若在資料夾中沒有任何記錄檔，則會顯示「錯誤訊息 介面」。「錯誤訊息介面」示意圖如下：<br/>
+
 <img width="169" alt="截圖 2023-10-16 下午11 02 02" src="https://github.com/weilin0323/Monopoly_OOP-II/assets/51693471/31dfbda0-89d0-42ce-b094-5de53a6dbeda">
 
-iii.若使用者點擊"Exit"按鈕，則程式直接結束執行。
+iii. 若使用者點擊"Exit"按鈕，則程式直接結束執行。
 
 ### 遊戲過程：
 玩家擲完骰子並且角色移動到格子之後，將根據不同情況進行： 
